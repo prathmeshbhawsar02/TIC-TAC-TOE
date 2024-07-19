@@ -3,6 +3,10 @@
 using namespace std;
 //Array for the board
 char square[10] = {'o','1','2','3','4','5','6','7','8','9'};
+//Function to Check wins and draws
+//if it returns 1 then player ("X" or "O") won the game
+//if it return 0 then match is draw
+//if returns -1 then continue
 
 int checkwin()
 {
@@ -51,6 +55,7 @@ int checkwin()
         return -1;
     }
 }
+//function to print board
 
 void board()
 {
@@ -73,6 +78,8 @@ void board()
     cout<<" "<<square[7]<<"  |  "<<square[8]<< "  |  "<<square[9]<<endl;
     cout<< "   |    |    "<<endl<<endl;  
 }
+
+//main Function
 
 int main()
 {
